@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Complaints App</h1>
+      <p>
+        This system allows users to submit complaints and provides an admin page
+        for authorized access.
+      </p>
+
+      <a href="/complaint.html">Submit a Complaint</a>
+
+      <form action="/admin.html" method="get">
+        <label for="adminPassword">Admin Password:</label>
+        <input
+          type="password"
+          id="adminPassword"
+          name="adminPassword"
+          required
+        />
+        <button type="submit" class="submit-btn">Go to Admin Page</button>
+      </form>
+    </main>
+  </body>
+</html>
