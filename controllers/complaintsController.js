@@ -15,7 +15,7 @@ export function submitContoller(req, res) {
       res.send("Complaint received! Thank you.");
     })
     .catch((err) => {
-      res.status(500).send("Error saving complaint");
+      res.status(500).send(`Error saving complaint ${err.message}`);
     });
 }
 
@@ -35,7 +35,7 @@ export async function adminController(req, res) {
         );
       })
       .catch((err) => {
-        res.status(500).send("Error retrieving complaints");
+        res.status(500).send(`Error retrieving complaints ${err.message}`);
       });
   } else {
     res.status(404).sendFile("/public/not-found.html", { root: process.cwd() });
