@@ -52,6 +52,11 @@ a {
   font-weight: bold;
   text-decoration: none;
 }
+#complaint_text {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
 @media (max-width: 500px) {
   .container {
     max-width: 95vw;

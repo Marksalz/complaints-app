@@ -1,7 +1,6 @@
 export function submitContoller(req, res) {
   const complaint = req.body;
-  // Handle the complaint (e.g., save, validate)
-  res.send("Complaint received! Thank you.");
+  res.send(`Complaint: ${complaint} received! Thank you.`);
 }
 
 export function adminController(req, res) {
