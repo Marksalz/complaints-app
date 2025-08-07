@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complaint form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Send an anonymous complaint</h1>
+      <form action="/submit" method="post" class="category">
+        <label for="complaint_category">Choose complaint category:</label>
+        <select name="complaint_category" id="complaint_category" required>
+          <option value="">--Please choose an option--</option>
+          <option value="food">Food</option>
+          <option value="equipment">Equipment</option>
+          <option value="commands">Commands</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="complaint_text">Complaint details:</label>
+        <textarea
+          name="complaint_text"
+          id="complaint_text"
+          rows="4"
+          required
+          placeholder="Describe your complaint"
+        ></textarea>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
