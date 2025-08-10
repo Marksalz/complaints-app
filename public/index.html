@@ -10,13 +10,13 @@
     <main class="container">
       <h1>Complaints App</h1>
       <p>
-        This system allows users to submit complaints and provides an admin page
-        for authorized access.
+        This system allows users to submit complaints and provides an admin
+        login for authorized access to view all complaints.
       </p>
 
-      <a href="/complaint.html">Submit a Complaint</a>
+      <a id="complaint_link" href="/complaint.html">Submit a Complaint</a>
 
-      <form action="/admin.html" method="get">
+      <form action="/admin" method="post">
         <label for="adminPassword">Admin Password:</label>
         <input
           type="password"
