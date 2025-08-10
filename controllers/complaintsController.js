@@ -19,7 +19,7 @@ export function submitContoller(req, res) {
     });
 }
 
-export async function adminController(req, res) {
+export function adminController(req, res) {
   const password = req.body.adminPassword;
   if (password === process.env.ADMIN_PASSWORD) {
     complaintsCollectipn
